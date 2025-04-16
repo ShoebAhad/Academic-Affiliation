@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Academic Affiliation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Academic Affiliation</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" class="active">Courses</a></li>
+                <li><a href="premium.html">Premium</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login / Register</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="page-banner">
+        <div class="banner-content">
+            <h1>IT For All Courses</h1>
+            <p>Accessible technology education designed for non-CS students</p>
+        </div>
+    </section>
+
+    <section class="course-filters">
+        <div class="filter-container">
+            <div class="search-bar">
+                <input type="text" id="course-search" placeholder="Search courses...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-options">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="data">Data Analysis</option>
+                    <option value="docs">Document Preparation</option>
+                    <option value="programming">Programming</option>
+                    <option value="web">Web Development</option>
+                </select>
+                <select id="level-filter">
+                    <option value="">All Levels</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+                <select id="price-filter">
+                    <option value="">All Prices</option>
+                    <option value="free">Free</option>
+                    <option value="premium">Premium</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-courses">
+        <h2>All Courses</h2>
+        <div class="course-grid">
+            <!-- Free Courses -->
+            <div class="course-card" data-category="ai" data-level="beginner" data-price="free">
+                <div class="course-image">
+                    <img src="BackEnd/images/Address Business Issues with Data Science.jpeg" alt="Introduction to AI">
+                </div>
+                <div class="course-details">
+                    <span class="course-tag free">Free</span>
+                    <h3>Introduction to AI</h3>
+                    <p>Learn the basics of Artificial Intelligence and Machine Learning</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> 1,245 Students</span>
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="docs" data-level="beginner" data-price="free">
+                <div class="course-image">
+                    <img src="BackEnd/images/'.jpg" alt="LaTeX for Beginners">
+                </div>
+                <div class="course-details">
+                    <span class="course-tag free">Free</span>
+                    <h3>LaTeX for Beginners</h3>
+                    <p>Master document preparation with LaTeX for academic papers and presentations</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> 875 Students</span>
+                        <span><i class="fas fa-clock"></i> 4 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="data" data-level="beginner" data-price="free">
+                <div class="course-image">
+                    <img src="BackEnd/images/data.jpeg" alt="Excel for Data Analysis">
+                </div>
+                <div class="course-details">
+                    <span class="course-tag free">Free</span>
+                    <h3>Excel for Data Analysis</h3>
+                    <p>Learn how to effectively analyze data using Microsoft Excel</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> 1,560 Students</span>
+                        <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <!-- Premium Courses -->
+            <div class="course-card" data-category="ai" data-level="intermediate" data-price="premium">
+                <div class="course-image">
+                    <img src="BackEnd/images/data.jpeg" alt="Advanced AI and Machine Learning">
+                </div>
+                <div class="course-details">
+                    <span class="course-tag premium">Premium</span>
+                    <h3>Advanced AI and Machine Learning</h3>
+                    <p>Dive deeper into AI algorithms, neural networks, and practical applications</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> 754 Students</span>
+                        <span><i class="fas fa-clock"></i> 10 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <div class="course-price">$49.99</div>
+                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="programming" data-level="beginner" data-price="free">
+                <div class="course-image">
+                    <img src="BackEnd/images/data.jpeg" alt="Python Programming for Non-CS Students">
+                </div>
+                <div class="course-details">
+                    <span class="course-tag free">Free</span>
+                    <h3>Python Programming for Non-CS Students</h3>
+                    <p>Learn Python programming with practical examples relevant to various disciplines</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> 2,103 Students</span>
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="data" data-level="intermediate" data-price="premium">
+                <div class="course-image">
+                    <img src="BackEnd/images/data.jpeg" alt="Data Science Fundamentals">
+                </div>
+                <div class="course-details">
+                    <span class="course-tag premium">Premium</span>
+                    <h3>Data Science Fundamentals</h3>
+                    <p>Learn data analysis, visualization, and interpretation for research and industry</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> 687 Students</span>
+                        <span><i class="fas fa-clock"></i> 12 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <div class="course-price">$10</div>
+                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="web" data-level="beginner" data-price="free">
+                <div class="course-image">
+                    <img src="BackEnd/images/data.jpeg" alt="Web Development Basics">
+                </div>
+                <div class="course-details">
+                    <span class="course-tag free">Free</span>
+                    <h3>Web Development Basics</h3>
+                    <p>Create your own website with HTML, CSS, and JavaScript</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> 1,836 Students</span>
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Beginner</span>
+                    </div>
+                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="docs" data-level="intermediate" data-price="premium">
+                <div class="course-image">
+                    <img src="BackEnd/images/data.jpeg" alt="Advanced Academic Writing with LaTeX">
+                </div>
+                <div class="course-details">
+                    <span class="course-tag premium">Premium</span>
+                    <h3>Advanced Academic Writing with LaTeX</h3>
+                    <p>Master thesis and dissertation preparation with advanced LaTeX techniques</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> 432 Students</span>
+                        <span><i class="fas fa-clock"></i> 6 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <div class="course-price">$10</div>
+                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+
+            <div class="course-card" data-category="programming" data-level="intermediate" data-price="premium">
+                <div class="course-image">
+                    <img src="BackEnd/images/data.jpeg" alt="R Programming for Research">
+                </div>
+                <div class="course-details">
+                    <span class="course-tag premium">Premium</span>
+                    <h3>R Programming for Research</h3>
+                    <p>Statistical analysis and data visualization using R for academic research</p>
+                    <div class="course-meta">
+                        <span><i class="fas fa-users"></i> 586 Students</span>
+                        <span><i class="fas fa-clock"></i> 8 Weeks</span>
+                        <span><i class="fas fa-signal"></i> Intermediate</span>
+                    </div>
+                    <div class="course-price">$49.99</div>
+                    <a href="course-details.html" class="btn btn-outline">View Course</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h2>Stay Updated with Our Latest Courses</h2>
+            <p>Subscribe to our newsletter to receive updates on new courses and IT learning resources</p>
+            <form id="newsletter-form">
+                <input type="email" placeholder="Your Email Address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Academic Affiliation</h3>
+                <p>Empowering Non-CS Students with Essential IT Skills for the Modern World</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="premium.html">Premium</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Education St, Dhaka, Bangladesh</p>
+                <p><i class="fas fa-phone"></i> +880 1234 567890</p>
+                <p><i class="fas fa-envelope"></i> info@academicaffiliation.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Academic Affiliation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

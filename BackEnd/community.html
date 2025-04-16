@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Academic Affiliation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Academic Affiliation</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="premium.html">Premium</a></li>
+                <li><a href="community.html" class="active">Community</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login / Register</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="page-banner community-banner">
+        <div class="banner-content">
+            <h1>Join Our Community</h1>
+            <p>Connect, collaborate, and learn with fellow students from diverse academic backgrounds</p>
+        </div>
+    </section>
+
+    <section class="community-intro">
+        <div class="container">
+            <div class="community-content">
+                <h2>Why Join Our Community?</h2>
+                <div class="community-features">
+                    <div class="feature">
+                        <i class="fas fa-users"></i>
+                        <h3>Peer Learning</h3>
+                        <p>Learn from and collaborate with fellow students from diverse academic backgrounds</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-question-circle"></i>
+                        <h3>Get Help</h3>
+                        <p>Ask questions and receive help from peers and instructors in dedicated discussion forums</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Networking</h3>
+                        <p>Build connections with students from various universities and disciplines</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-bullhorn"></i>
+                        <h3>Share Knowledge</h3>
+                        <p>Share your insights, projects, and success stories with the community</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-forums">
+        <div class="container">
+            <h2>Discussion Forums</h2>
+            <div class="forum-list">
+                <div class="forum-item">
+                    <div class="forum-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="forum-details">
+                        <h3>General Programming</h3>
+                        <p>Discuss general programming concepts, algorithms, and problem-solving techniques</p>
+                        <div class="forum-stats">
+                            <span><i class="fas fa-comments"></i> 341 Topics</span>
+                            <span><i class="fas fa-user"></i> 1,678 Members</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">Join Discussion</a>
+                </div>
+
+                <div class="forum-item">
+                    <div class="forum-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="forum-details">
+                        <h3>AI & Machine Learning</h3>
+                        <p>Share and discuss AI projects, machine learning techniques, and applications</p>
+                        <div class="forum-stats">
+                            <span><i class="fas fa-comments"></i> 256 Topics</span>
+                            <span><i class="fas fa-user"></i> 1,245 Members</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">Join Discussion</a>
+                </div>
+
+                <div class="forum-item">
+                    <div class="forum-icon">
+                        <i class="fas fa-table"></i>
+                    </div>
+                    <div class="forum-details">
+                        <h3>Excel & Data Analysis</h3>
+                        <p>Discuss Excel tips, data analysis techniques, and visualization methods</p>
+                        <div class="forum-stats">
+                            <span><i class="fas fa-comments"></i> 186 Topics</span>
+                            <span><i class="fas fa-user"></i> 985 Members</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">Join Discussion</a>
+                </div>
+
+                <div class="forum-item">
+                    <div class="forum-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="forum-details">
+                        <h3>LaTeX & Academic Writing</h3>
+                        <p>Share LaTeX templates, discuss formatting techniques, and academic writing best practices</p>
+                        <div class="forum-stats">
+                            <span><i class="fas fa-comments"></i> 205 Topics</span>
+                            <span><i class="fas fa-user"></i> 749 Members</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-outline">Join Discussion</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="student-reviews">
+        <h2>Course Reviews & Feedback</h2>
+        <div class="reviews-container">
+            <div class="review-filters">
+                <select id="course-filter">
+                    <option value="">All Courses</option>
+                    <option value="ai">Introduction to AI</option>
+                    <option value="latex">LaTeX for Beginners</option>
+                    <option value="excel">Excel for Data Analysis</option>
+                    <option value="python">Python Programming</option>
+                </select>
+                <select id="rating-filter">
+                    <option value="">All Ratings</option>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+            </div>
+            
+            <div class="reviews-list">
+                <div class="review-card" data-course="ai" data-rating="5">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Ahmed Khan</h4>
+                            <p>University of Dhaka</p>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="date">March 12, 2025</span>
+                        </div>
+                    </div>
+                    <div class="review-course">Introduction to AI</div>
+                    <div class="review-content">
+                        <p>This course made complex AI concepts approachable for someone with no CS background. The practical examples were especially helpful in understanding how AI can be applied in my field of biology.</p>
+                    </div>
+                </div>
+                
+                <div class="review-card" data-course="latex" data-rating="5">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Fatima Begum</h4>
+                            <p>University of Chittagong</p>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="date">February 28, 2025</span>
+                        </div>
+                    </div>
+                    <div class="review-course">LaTeX for Beginners</div>
+                    <div class="review-content">
+                        <p>The LaTeX course transformed how I prepare my research papers. The templates provided are invaluable, and the instructor's explanations were clear and easy to follow.</p>
+                    </div>
+                </div>
+                
+                <div class="review-card" data-course="excel" data-rating="4">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Rajiv Kumar</h4>
+                            <p>University of Manchester</p>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">★★★★☆</span>
+                            <span class="date">April 5, 2025</span>
+                        </div>
+                    </div>
+                    <div class="review-course">Excel for Data Analysis</div>
+                    <div class="review-content">
+                        <p>Great course for learning Excel from a data analysis perspective. Would have appreciated more examples from diverse fields, but overall the content was excellent and practical.</p>
+                    </div>
+                </div>
+                
+                <div class="review-card" data-course="python" data-rating="5">
+                    <div class="review-header">
+                        <div class="reviewer-info">
+                            <h4>Tanvir Ahmed</h4>
+                            <p>Gazipur Agri University</p>
+                        </div>
+                        <div class="review-rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="date">March 25, 2025</span>
+                        </div>
+                    </div>
+                    <div class="review-course">Python Programming for Non-CS Students</div>
+                    <div class="review-content">
+                        <p>As an agricultural science student, I never thought I'd be able to program. This course showed me how Python can be used to analyze crop data. The examples relevant to my field made all the difference!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button class="btn btn-secondary">Load More Reviews</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="write-review">
+        <div class="container">
+            <h2>Share Your Experience</h2>
+            <p>Help future students by sharing your experience with our courses</p>
+            <form id="review-form">
+                <div class="form-group">
+                    <label for="review-name">Your Name</label>
+                    <input type="text" id="review-name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="review-university">University/Institution</label>
+                    <input type="text" id="review-university" name="university" required>
+                </div>
+                <div class="form-group">
+                    <label for="review-course">Select Course</label>
+                    <select id="review-course" name="course" required>
+                        <option value="">-- Select a Course --</option>
+                        <option value="ai">Introduction to AI</option>
+                        <option value="latex">LaTeX for Beginners</option>
+                        <option value="excel">Excel for Data Analysis</option>
+                        <option value="python">Python Programming</option>
+                        <option value="advanced-ai">Advanced AI and Machine Learning</option>
+                        <option value="data-science">Data Science Fundamentals</option>
+                        <option value="advanced-latex">Advanced Academic Writing with LaTeX</option>
+                        <option value="r-programming">R Programming for Research</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review-rating">Rating</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="review-content">Your Review</label>
+                    <textarea id="review-content" name="content" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Review</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="community-events">
+        <h2>Upcoming Community Events</h2>
+        <div class="events-container">
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">25</span>
+                    <span class="month">Apr</span>
+                </div>
+                <div class="event-details">
+                    <h3>AI in Healthcare: Applications and Opportunities</h3>
+                    <p class="event-meta">
+                        <span><i class="fas fa-clock"></i> 3:00 PM - 5:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Online Webinar</span>
+                        <span><i class="fas fa-user"></i> Dr. Aminul Islam</span>
+                    </p>
+                    <p class="event-description">Join us for an interactive discussion on how AI is transforming healthcare research and practice. Perfect for medical, biology, and health science students.</p>
+                    <a href="#" class="btn btn-outline">Register Now</a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">10</span>
+                    <span class="month">May</span>
+                </div>
+                <div class="event-details">
+                    <h3>Excel Workshop: Advanced Data Analysis for Research</h3>
+                    <p class="event-meta">
+                        <span><i class="fas fa-clock"></i> 10:00 AM - 12:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Online Workshop</span>
+                        <span><i class="fas fa-user"></i> Prof. Sarah Johnson</span>
+                    </p>
+                    <p class="event-description">A hands-on workshop on using Excel for complex data analysis, pivot tables, and visualization techniques. Bring your research data for personalized guidance.</p>
+                    <a href="#" class="btn btn-outline">Register Now</a>
+                </div>
+            </div>
+            
+            <div class="event-card">
+                <div class="event-date">
+                    <span class="day">18</span>
+                    <span class="month">May</span>
+                </div>
+                <div class="event-details">
+                    <h3>Career Panel: IT Skills in Non-Tech Industries</h3>
+                    <p class="event-meta">
+                        <span><i class="fas fa-clock"></i> 4:00 PM - 6:00 PM</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Online Panel Discussion</span>
+                        <span><i class="fas fa-users"></i> Various Industry Experts</span>
+                    </p>
+                    <p class="event-description">Listen to professionals from various non-tech fields discuss how IT skills have advanced their careers and get advice on how to leverage your new skills.</p>
+                    <a href="#" class="btn btn-outline">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Academic Affiliation</h3>
+                <p>Empowering Non-CS Students with Essential IT Skills for the Modern World</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="premium.html">Premium</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Education St, Dhaka, Bangladesh</p>
+                <p><i class="fas fa-phone"></i> +880 1234 567890</p>
+                <p><i class="fas fa-envelope"></i> info@academicaffiliation.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Academic Affiliation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

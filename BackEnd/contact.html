@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Academic Affiliation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Academic Affiliation</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="premium.html">Premium</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="login.html" class="login-btn">Login / Register</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="page-banner contact-banner">
+        <div class="banner-content">
+            <h1>Contact Us</h1>
+            <p>Get in touch with our team for inquiries, support, or collaboration opportunities</p>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container">
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Our Location</h3>
+                    <p>123 Education Street</p>
+                    <p>Dhaka, Bangladesh</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@academicaffiliation.com</p>
+                    <p>support@academicaffiliation.com</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+880 1234 567890</p>
+                    <p>+880 9876 543210</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Office Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                    <p>Saturday: 10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="form-container">
+                    <h2>Send Us a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Select Subject --</option>
+                                <option value="course-inquiry">Course Inquiry</option>
+                                <option value="technical-support">Technical Support</option>
+                                <option value="payment-issues">Payment Issues</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <h2>Find Us On Map</h2>
+                    <div class="map-placeholder">
+                        <!-- This would be replaced with an actual map in a real implementation -->
+                        <img src="/api/placeholder/600/400" alt="Map Location">
+                        <div class="map-overlay">
+                            <p>Interactive Map Would Be Here</p>
+                            <p>123 Education Street, Dhaka, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="email-notification">
+        <div class="container">
+            <h2>Email Notification Service</h2>
+            <div class="notification-content">
+                <div class="notification-info">
+                    <p>Sign up to receive important updates, course announcements, and promotional offers directly to your inbox. We'll keep you informed about:</p>
+                    <ul>
+                        <li>New course launches</li>
+                        <li>Special discounts and offers</li>
+                        <li>Upcoming events and webinars</li>
+                        <li>Platform updates and improvements</li>
+                    </ul>
+                </div>
+                <div class="notification-form">
+                    <form id="notification-form">
+                        <div class="form-group">
+                            <label for="notification-name">Your Name</label>
+                            <input type="text" id="notification-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notification-email">Email Address</label>
+                            <input type="email" id="notification-email" name="email" required>
+                        </div>
+                        <div class="form-group notification-preferences">
+                            <label>Notification Preferences:</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pref-courses" name="preferences" value="courses" checked>
+                                <label for="pref-courses">New Courses</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pref-offers" name="preferences" value="offers" checked>
+                                <label for="pref-offers">Special Offers</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pref-events" name="preferences" value="events" checked>
+                                <label for="pref-events">Events & Webinars</label>
+                            </div>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="pref-news" name="preferences" value="news" checked>
+                                <label for="pref-news">News & Updates</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly can I expect a response to my inquiry?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We strive to respond to all inquiries within 24-48 hours during business days. For urgent matters, we recommend calling our support line directly.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I visit your office for in-person assistance?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you're welcome to visit our office during our working hours. We recommend scheduling an appointment in advance to ensure the relevant team member is available to assist you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer technical support for course-related issues?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, we provide technical support for all course-related issues. You can reach our technical support team via email at support@academicaffiliation.com or through the contact form on this page.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can universities partner with Academic Affiliation?</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We welcome partnerships with educational institutions. Please select "Partnership Opportunities" in the contact form subject line, and our partnership team will reach out to discuss collaboration options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-connect">
+        <div class="container">
+            <h2>Connect With Us</h2>
+            <p>Follow us on social media for the latest updates, educational content, and community highlights</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-icon twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-icon linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="social-icon instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-icon youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Academic Affiliation</h3>
+                <p>Empowering Non-CS Students with Essential IT Skills for the Modern World</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="premium.html">Premium Courses</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Nazimuddin Road, 90/91 SH Plaza,  Dhaka, Bangladesh</p>
+                <p><i class="fas fa-phone"></i> +88-01798343401</p>
+                <p><i class="fas fa-envelope"></i> shoeb@it-for-all.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Academic Affiliation. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
